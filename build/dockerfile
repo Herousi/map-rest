@@ -1,0 +1,17 @@
+ARG BASE
+
+FROM $BASE
+
+ARG AUTHOR
+ARG VERSION
+LABEL maintainer=${AUTHOR} version=${VERSION}
+
+ARG TARGETOS
+ARG TARGETARCH
+
+COPY ./dist/build-app /app/build-app
+ENV GIN_MODE release
+
+EXPOSE 8085
+ENTRYPOINT ["/app/build-app", "--port=8085", "--prefix=/apaas/map/rest"]
+
