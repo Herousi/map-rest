@@ -6,13 +6,13 @@ import (
 	"os"
 	"time"
 
+	"github.com/Herousi/map-rest/src/common/client"
+	"github.com/Herousi/map-rest/src/common/conf"
+	"github.com/Herousi/map-rest/src/pkg/beagle/log"
+	"github.com/Herousi/map-rest/src/router"
+	"github.com/Herousi/map-rest/src/util/commonutil"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/common/client"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/common/conf"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/pkg/beagle/log"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/router"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/util/commonutil"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
@@ -20,7 +20,7 @@ import (
 // run args
 var (
 	port       = pflag.Int("port", 8085, "server port")                                                                                              // 端口
-	prefix     = pflag.String("prefix", "/apaas/map/rest", "url prefix")                                                                             // 访问地址
+	prefix     = pflag.String("prefix", "/map/rest", "url prefix")                                                                                   // 访问地址
 	dbURL      = pflag.String("dbURL", "host=localhost port=1119 user=postgres password=password dbname=apaasgis sslmode=disable", "db connect url") // mysql 数据库连接
 	dbDriver   = pflag.String("dbDriver", "postgres", "db driver: mysql postgres oci8")                                                              // mysql 数据库驱动
 	redisURL   = pflag.String("redisURL", "localhost:6379", "redis url")                                                                             //  redis 连接

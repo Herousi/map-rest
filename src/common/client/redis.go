@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Herousi/map-rest/src/common/conf"
 	"github.com/go-redis/redis"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/common/conf"
 	"go.uber.org/zap"
 )
 

@@ -1,4 +1,4 @@
-module gitlab.wodcloud.com/apaas-gis/apaas-map-rest
+module github.com/Herousi/map-rest
 
 go 1.16
 

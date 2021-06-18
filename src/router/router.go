@@ -1,10 +1,10 @@
 package router
 
 import (
+	"github.com/Herousi/map-rest/src/common/conf"
+	"github.com/Herousi/map-rest/src/controller"
+	"github.com/Herousi/map-rest/src/router/middleware/header"
 	"github.com/gin-gonic/gin"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/common/conf"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/controller"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/router/middleware/header"
 )
 
 // 加载路由

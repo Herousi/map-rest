@@ -13,5 +13,5 @@ COPY ./dist/build-app /app/build-app
 ENV GIN_MODE release
 
 EXPOSE 8085
-ENTRYPOINT ["/app/build-app", "--port=8085", "--prefix=/apaas/map/rest"]
+ENTRYPOINT ["/app/build-app", "--port=8085", "--prefix=/map/rest"]
 

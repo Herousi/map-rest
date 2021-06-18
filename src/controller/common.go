@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Herousi/map-rest/src/pkg/beagle/res"
+	"github.com/Herousi/map-rest/src/util/commonutil"
 	"github.com/gin-gonic/gin"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/pkg/beagle/res"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/util/commonutil"
 )
 
 // 健康检查

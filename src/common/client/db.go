@@ -3,10 +3,10 @@ package client
 import (
 	"time"
 
+	"github.com/Herousi/map-rest/src/common/conf"
 	_ "github.com/lib/pq"
 	"github.com/xormplus/xorm"
 	"github.com/xormplus/xorm/names"
-	"gitlab.wodcloud.com/apaas-gis/apaas-map-rest/src/common/conf"
 	"go.uber.org/zap"
 )
 
